@@ -1,0 +1,177 @@
+% REVISÃO DE LITERATURA--------------------------------------------------------
+
+\chapter{FUNDAMENTAÇÃO TEÓRICA}
+\label{chap:fundamentacaoTeorica}
+
+\section{SENSORES}
+\label{sec:sensores}
+
+Sensores, no contexto da engenharia elétrica é a conversão de grandezas físicas em grandezas elétricas que então podem ser interpretadas através de displays no corpo do instrumento de medida ou então enviadas a outro dispositivo para ser processada. “Utilizam-se os efeitos físicos (força eletromagnética, força eletrostática, efeito Joule, efeito termoelétrico, entre outros) para fornecer esses dados aos instrumentos através de grandezas elétricas”. 
+
+\section{DETECÇÃO DE LUZ}
+\label{subsec:detecaoDeLuz}
+
+Para detectar o nível de luminosidade do local um dispositivo fotocondutor chamado de resistor LDR (do inglês light dependent resistor) pode ser usado. Este quando exposto à luz possui uma baixa resistência e possui comportamento contrário quando longe de quaisquer fontes luminosas.
+
+Podemos detectar essas variações de sua resistência indiretamente através do uso de um divisor resistivo, onde o LDR será inserido em série com um resistor com valor conhecido. Segundo Kilari et al (2020), o desempenho desta solução é semelhante a Luxímetros comerciais tendo um desempenho muito próximo de um valor linear.
+
+Esse comportamento é explicado por Balbinot (2019), onde a exposição à luz resulta em elétron livre que é deslocado da banda de valência para a de condução assim quando exposto à um potencial elétrico ocasiona o movimento de elétrons e lacunas.
+
+\section{SENSOR DE VIBRAÇAO}
+\label{subsec:sensorDeVibracao}
+
+Os autores supracitados destacam que os danos causados pela vibração dependem da média da aceleração a qual a região está exposta durante um dia de trabalho. Eles também apresentam os seguintes dados a respeito dos efeitos de vibrações no corpo humano de acordo com cada faixa de frequência sendo:
+
+\begin{citacao}
+Na atividade muscular, na faixa de 1 Hz a 30 Hz, as pessoas apresentam dificuldades de manter a postura, além de apresentar reflexos lentos; no sistema cardiovascular, a frequências inferiores a 20 Hz, observa-se aumento da frequência cardíaca; 	aparentemente existem alterações nas condições de ventilação pulmonar e na taxa respiratória com vibrações na ordem de 4,9 m/s2 na faixa de 1 Hz a 10 Hz; 	na faixa de frequência de 0,1 Hz a 0,7 Hz, diversas pessoas apresentam enjoo, náuseas, perda de peso, redução da acuidade visual, insônia e distúrbios do labirinto 
+\end{citacao}
+
+Para medir vibrações nestas frequências foi selecionado o acelerômetro capacitivo que segundo Balbinot (2019) tem uma vantagem sobre os acelerômetros piezo resistiva por permitirem medir inclinações de objetos em relação a sua superfície.
+
+Seu funcionamento em Figura 2 é descrito pelo autor como dois capacitores diferenciais com uma placa central comum representada na figura acima pela cor azul. A placa comum é presa a uma viga móvel que se encontra sustentada por outras duas paredes flexíveis representadas em amarelo. Quando o dispositivo é submetido a aceleração a viga se desloca movimentando consigo a placa comum e assim provocando uma diferença de capacitância.
+
+No caso deste trabalho, considere a figura 3, o uso de acelerômetro capacitivo nos permite detectar o ângulo do braço do usuário e assim distinguir movimentos de vibrações, uma vez que as vibrações do uso de ferramentas oscilaram em torno do ângulo de trabalho do operador.
+
+\section{SENSOR DE VIBRAÇÃO}
+\label{subsec: sensorDeVibracao}
+
+O que é o som? Segundo Balbinot (2019) sua definição é qualquer oscilação de pressão, seja no ar, água ou qualquer outro meio físico. Ou formalmente é a diferença entre a pressão instantânea e a pressão ambiente média para certo ponto definida como:
+
+\begin{citacao}
+Na atividade muscular, na faixa de 1 Hz a 30 Hz, as pessoas apresentam dificuldades de manter a postura, além de apresentar reflexos lentos; no sistema cardiovascular, a frequências inferiores a 20 Hz, observa-se aumento da frequência cardíaca; 	aparentemente existem alterações nas condições de ventilação pulmonar e na taxa respiratória com vibrações na ordem de 4,9 m/s2 na faixa de 1 Hz a 10 Hz; 	na faixa de frequência de 0,1 Hz a 0,7 Hz, diversas pessoas apresentam enjoo, náuseas, perda de peso, redução da acuidade visual, insônia e distúrbios do labirinto 
+\end{citacao}
+
+Para medir vibrações nestas frequências foi selecionado o acelerômetro capacitivo que segundo Balbinot (2019) tem uma vantagem sobre os acelerômetros piezo resistiva por permitirem medir inclinações de objetos em relação a sua superfície.
+
+Seu funcionamento em Figura 2 é descrito pelo autor como dois capacitores diferenciais com uma placa central comum representada na figura acima pela cor azul. A placa comum é presa a uma viga móvel que se encontra sustentada por outras duas paredes flexíveis representadas em amarelo. Quando o dispositivo é submetido a aceleração a viga se desloca movimentando consigo a placa comum e assim provocando uma diferença de capacitância.
+
+No caso deste trabalho, considere a figura 3, o uso de acelerômetro capacitivo nos permite detectar o ângulo do braço do usuário e assim distinguir movimentos de vibrações, uma vez que as vibrações do uso de ferramentas oscilaram em torno do ângulo de trabalho do operador.
+
+
+\section{SENSOR DE SOM}
+\label{subsec: sensorDeSom}
+
+O que é o som? Segundo Balbinot (2019) sua definição é qualquer oscilação de pressão, seja no ar, água ou qualquer outro meio físico. Ou formalmente é a diferença entre a pressão instantânea e a pressão ambiente média para certo ponto definida como:
+
+Santini et al, possuem uma definição para pressão sonora levando em consideração um intervalo de tempo, o valor rms (root mean square) do valor da pressão instantânea e o mínimo audível pelo ser humano:
+
+Os principais efeitos no corpo humano de ruídos quando ultrapassam limites estabelecidos em norma são: “mascaramento da voz humana, surdez temporária, surdez permanente irregularidade do sono e aumento da pressão arterial” (BALBINOT, 2019).
+
+Para medir essas variações de pressão no ar o microfone omnidirecional condensador (ou capacitivo) pode ser utilizado por possuir baixa distorção e alta estabilidade, seu funcionamento é descrito pelo autor citado anteriormente e consiste de um diafragma montado a uma pequena distância de um prato e ambos formam um capacitor, quando o diafragma é submetido a algum diferencial de pressão ele se move alterando a distância de si mesmo e o prato gerando um diferencial de reatância.
+
+\section{SENSOR DE TEMPERATURA}
+\label{subsec: sensorDeTemperatura}
+
+A matéria muda algumas de suas características quando submetida a diferentes variações de temperatura, o que não poderia ser diferente para os semicondutores tais como diodos e transistores. Devido à miniaturização dos semicondutores tornou-se fácil o seu uso em dispositivos vestíveis Balbinot (2019) descrevem como podemos utilizar transistores para medir temperatura. 
+Semicondutores são isolantes a baixas temperaturas, porém sua condutividade aumenta junto com o fornecimento de calor a ele, portanto teoricamente podemos utilizar um diodo para tal, mas a variação de condutividade não é linear a variação de temperatura além de que a corrente que passa por ele também é dependente da temperatura. Outra possibilidade seria utilizar um transistor e utilizar a dependência com a temperatura da tensão base-emissor, porém para isso é necessária uma fonte de corrente contínua levando a seguinte solução apresentada pelos autores:
+
+O circuito apresentado acima é popularmente conhecido como conversor de temperatura-corrente e é amplamente utilizado nos circuitos integrados. Os transistores Q3 e Q4 são idênticos resultando em correntes de mesma magnitude passando por eles, o transistor Q2 é um arranjo de 8 transistores em paralelo sendo cada um deles idênticos a Q1 de forma que a corrente no emissor de um transistor de Q2 é 1/8 a corrente de Q1. Tomando o resistor R igual a 358 Ω temos a seguinte equação:
+
+\section{LIMITES DE ESPOSIÇÃO ESTABELECIDOS EM NORMA}
+\label{subsec: sensorDeEsposicaoEstabelecidosEmNorma}
+
+O ambiente de trabalho possui agentes físicos que interfere na saúde humana. Para que estes agentes não gerem danos a NR 9 estabeleceu limites de tolerância relacionados com a natureza e o tempo de exposição a fim de não causar danos a saúde do trabalhador.
+
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{ | l | l | }
+\hline
+	NÍVEL DE RUÍDO dB (A) & MÁXIMA EXPOSIÇÃO DIÁRIA PERMISSÍVEL (horas) \\ \hline
+	85 & 8 horas \\ 
+	86 & 7 horas \\ 
+	87 & 6 horas \\ 
+	88 & 5 horas \\ 
+	89 & 4 horas e 30 minutos \\ 
+	90 & 4 horas \\ 
+	91 & 3 horas e 30 minutos \\ 
+	92 & 3 horas \\
+	93 & 2 horas e 40 minutos \\ 
+	94 & 2 horas e 15 minutos \\
+	95 & 2 horas \\
+	96 & 1 hora e 45 minutos \\
+	98 & 1 hora e 15 minutos \\
+	100 & 1 hora \\
+	102 & 45 minutos \\
+	104 & 35 minutos \\
+	105 & 30 minutos \\
+	106 & 25 minutos \\
+	108 & 20 minutos \\ 
+	110 & 15 minutos \\ 
+	112 & 10 minutos \\ 
+	114 & 8 minutos \\
+	115 & 7 minutos \\ \hline
+\end{tabular}
+    \caption{Limites de tolerância para ruído contínuo ou intermitente}
+    \label{tab:limitesDeTolerancia}
+\end{table}
+
+Caso o ruído seja do tipo de impacto, definido pela NR 9 como: “Entende-se por ruído de impacto aquele que apresenta picos de energia acústica de duração inferior a 1 (um) segundo, a intervalos superiores a 1 (um) segundo”. Para este caso deve-se usar a tabela 3 - Níveis de pico máximo admissíveis em função do número de impactos.
+
+\section{VIBRAÇÃO}
+\label{subsec: vibracao}
+
+A NR 9 estabelece que o limite máximo de exposição diária à vibração em mãos e braços é medido em aceleração resultante de exposição normalizada (aren) e deve ser de no máximo 5 m/s2. Cabe a Fundacentro definir como são calculados esses limites, sendo a aren é calculada por:
+
+\begin{itemize}
+    \item are é a aceleração resultante de exposição.
+    \item T é o tempo de duração da jornada de trabalho diária.
+    \item 	T0 é igual a 8 horas.
+\end{itemize}
+
+A aceleração resultante é calculada utilizando-se outras duas medidas sendo a primeira a aceleração média resultante (amr) que consiste de uma média aritmética das acelerações em cada componente do sistema tridimensional. A medida necessária é a aceleração resultante de exposição parcial (arep) que pode ser obtido pela média aritmética da aceleração média resultante cada vez em que ocorre uma aceleração no eixo em que estamos observando a vibração.
+Para calcular a aceleração resultante de exposição a seguinte formula deve ser usada:
+
+Sendo que:
+
+\begin{itemize}
+    \item arep é a aceleração resultante de exposição parcial.
+    \item n é o número de repetições ao longo da jornada de trabalho.
+    \item m representa i, j e k que correspondem aos eixos x, y e z respectivamente.
+\end{itemize}
+
+\section{TEMPERATURA}
+\label{subsec: temperatura}
+
+A NR 9 estabelece limites a exposição ao calor, segundo a mesma o limite de temperatura varia conforme a atividade exercida pois cada atividade possui uma taxa metabólica. Como a tabela é demasiadamente grande para este trabalho apenas consideraremos as seguintes atividades: trabalho sentado leve com as mãos, trabalho sentado pesado com dois braços, trabalho em pé com movimento sem carga a 4 km/h.
+
+Para essas atividades a temperatura máxima deve seguir a seguindo a tabela 5.
+
+\section{LUMINOSIDADE}
+\label{subsec: luminosidade}
+
+A ABNT NBR ISO/CIE 8995-1 estabelece os parâmetros de iluminação que um ambiente deve obedecer. Neste trabalho apenas vamos conseguir medir a iluminância do ambiente através de um resistor LDR, cada ambiente tem um valor mínimo estabelecido na norma porém vamos considerar apenas um local de usinagem onde a iluminância média mínima deve ser de 300 lux.
+
+\section{COMO AS PÁGINAS WEB FUNCIONAM}
+\label{sec: como as paginas web funcionam}
+
+\section{HTML}
+\label{subsec: html}
+
+O HTML (hypertext marking language) nas palavras da Mozilla (2021) é o bloco de construção da internet. Ela diz ao navegador onde cada elemento deve estar e como ele deve ser estruturado ao usuário. Ele envolve o conteúdo entre tags para que ele haja de uma certa maneira, para envolver o conteúdo temos a seguinte estrutura <(nome da tag)>  texto </(nome da tag)> e tudo o que estiver entre elas se comporta conforme suas características, por exemplo considere as seguintes tags:
+
+\begin{itemize}
+    \item h1 - Cria um título.
+    \item p - Cria um parágrafo.
+    \item ul - Cria uma lista não numerada.
+    \item li - Adiciona elementos a lista.
+\end{itemize}
+
+
+Existem inúmeras outras tags HTML que podem ser consultadas em sua documentação oficial. Para construir uma lista de compras, por exemplo, podemos apenas envolver nossa lista entre estas tags da seguinte forma: <h1>Lista de compras</h1><p>Itens básicos que estão faltando em casa:</p><ul><li>Maçã</li><li>Laranja</li><li>Pera</li>.
+
+\section{CSS}
+\label{subsec: html}
+
+É a abreviação de (Cascading Style Sheets) e de acordo com a organização citada anteriormente ela é responsável por dar estilo ao HTML e é um padrão adotado em todos os navegadores. Por exemplo, para mudar a cor do título de nossa lista basta escrever a tag h1 da seguinte forma: <h1 style="color:red">Lista de compras</h1>.
+
+\section{PHP}
+\label{subsec: php}
+
+Segundo o site dos desenvolvedores do PHP (Hypertext Preprocessor) é uma linguagem de script que é inserido entre o código HTML o dando a capacidade de rodar scripts, estes scripts são processados inteiramente do lado do servidor, podendo gerar páginas dinâmicas com base nos dados recebidos de um método HTTP (o HTTP será discutido futuramente). Um dos exemplos de uma aplicação do PHP é uma tela de login em um sistema, ao preenchermos nossas credenciais e ao clicar em enviar o servidor processa os dados recebidos e nos retorna uma nova página.
+
+\section{PHP}
+\label{subsec: php}
+
+Segundo o site dos desenvolvedores do PHP (Hypertext Preprocessor) é uma linguagem de script que é inserido entre o código HTML o dando a capacidade de rodar scripts, estes scripts são processados inteiramente do lado do servidor, podendo gerar páginas dinâmicas com base nos dados recebidos de um método HTTP (o HTTP será discutido futuramente). Um dos exemplos de uma aplicação do PHP é uma tela de login em um sistema, ao preenchermos nossas credenciais e ao clicar em enviar o servidor processa os dados recebidos e nos retorna uma nova página.
+
